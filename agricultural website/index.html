@@ -1,0 +1,516 @@
+<html lang="eng">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agri-Bussiness</title>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="index_style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="cart.js"></script>
+        <script src="https://kit.fontawesome.com/3077a82ac1.js" crossorigin="anonymous"></script>
+        <!-- <script>
+            function redirect(){
+                window.location.href = "Advance_Shopping_cart-master/index.php"
+            }
+        </script> -->
+        <link href="https://font.googleleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="#">Agri-Bussiness</a>
+                <div class="header-left-p">
+                    <p><a href="#">Explore</a><span><b><i>Plus<i class="fa-solid fa-plus"></i></i></b></span></p>
+                </div>
+            </div>
+            <div class="header-center">
+                <input class="header-center-input" type="text" placeholder="search for products,produces and more"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!------login button---->
+            <div class="login">
+                <a href="login.html" class="login_btn">Login</a>
+                <div class="login_dropdown none">
+                    <ul class="login_dropdown_list">
+                        <li class="login_drop_li sign_Li flex">
+                            <p class="new_login">New Customer</p>
+                            <a href="signup.html" class="sign_up">Sign_up</a>
+                        </li>
+                        <li class="login_drop_li"><i class="fa-solid fa-circle-User"></i><a href="map.html">Map</a></li>
+                        <li class="login_drop_li"><i class="fa-solid fa-square-plus"></i><a href="chart1.html">Stastical Data</a></li>
+                        <li class="login_drop_li"><i class="fa-solid fa-bag-shopping"></i>Order</li>
+                        <li class="login_drop_li"><i class="fa-solid fa-heart"></i>Wishlist</li>
+                        <li class="login_drop_li"><i class="fa-solid fa-money-bill"></i>Rewards</li>
+                        <li class="login_drop_li"><i class="fa-solid fa-gift"></i>Gift Cards</li>
+                    </ul>
+                </div>
+            </div>   
+            <!------more---->
+            <div class="more">
+                <span class="more_lan">More<i class="fa-solid fa-angle-down"></i></span>
+                <div class="more_dropdown none">
+
+                        <ul class="more_dropdown_list">
+                            <li class="login_drop_li"><i class="more-icon fa fa-bell"></i>Notification</li>
+                            <li class="login_drop_li"><i class="more-icon fa fa-shopping-basket"></i>Sell on Agri-B</li>
+                            <li class="login_drop_li"><i class="more-icon fa fa-bag-shopping"></i>24x7 customer care</li>
+                            <li class="login_drop_li"><i class="more-icon fa fa-line-chart"></i>Advertise</li>
+                            <li class="login_drop_li"><i class="more-icon fa fa-download"></i>Download App</li>
+                        </ul>
+                </div>
+            </div>
+            <!------cart---->
+            <span class="cart_lan"><i class="fa-solid fa-cart-shopping" id="cart-icon"><button onclick="redirect()">Cart</button></i></span>
+             <a href="http://localhost/Advance_Shopping_cart-master/index.php">Cart</a>
+
+        </header>
+        <!---------Category Section---->
+        <section>
+            <div class="category-row">
+                <div class="category-col">
+                    <img src="fruiticon.png" alt="">
+                    <div class="dropdown">
+                        <h5 class="dropbtn">Fruits</h5>
+                        <div class="dropdown-content">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="product-title">Tropical</h3>
+                                        <a href="#">Banana</a>
+                                        <a href="#">Dragon Fruit</a>
+                                        <a href="#">Passion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Vegtables</h3>
+                                        <a href="#">Potato</a>
+                                        <a href="#">BeetRoot</a>
+                                        <a href="#">Onion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Products</h3>
+                                        <a href="#">knife</a>
+                                        <a href="#">jam</a>
+                                        <a href="#">dryfriuts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-col">
+                    <img src="new veg.png" alt="">
+                    <div class="dropdown">
+                        <h5 class="dropbtn">Vegtables</h5>
+                        <div class="dropdown-content">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="product-title">Tropical</h3>
+                                        <a href="#">Banana</a>
+                                        <a href="#">Dragon Fruit</a>
+                                        <a href="#">Passion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Vegtables</h3>
+                                        <a href="#">Potato</a>
+                                        <a href="#">BeetRoot</a>
+                                        <a href="#">Onion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Products</h3>
+                                        <a href="#">knife</a>
+                                        <a href="#">jam</a>
+                                        <a href="#">dryfriuts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-col">
+                    <img src="spice icon.png" alt="">
+                    <div class="dropdown">
+                        <h5 class="dropbtn">Spices</h5>
+                        <div class="dropdown-content">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="product-title">Tropical</h3>
+                                        <a href="#">Banana</a>
+                                        <a href="#">Dragon Fruit</a>
+                                        <a href="#">Passion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Vegtables</h3>
+                                        <a href="#">Potato</a>
+                                        <a href="#">BeetRoot</a>
+                                        <a href="#">Onion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Products</h3>
+                                        <a href="#">knife</a>
+                                        <a href="#">jam</a>
+                                        <a href="#">dryfriuts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-col">
+                    <img src="truck2.png" alt="">
+                    <div class="dropdown">
+                        <h5 class="dropbtn">Products</h5>
+                        <div class="dropdown-content">
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="product-title">Tropical</h3>
+                                        <a href="#">Banana</a>
+                                        <a href="#">Dragon Fruit</a>
+                                        <a href="#">Passion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Vegtables</h3>
+                                        <a href="#">Potato</a>
+                                        <a href="#">BeetRoot</a>
+                                        <a href="#">Onion</a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="product-title">Products</h3>
+                                        <a href="#">knife</a>
+                                        <a href="#">jam</a>
+                                        <a href="#">dryfriuts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------baner section------>
+        <section>
+            <div class="banner">
+                <div class="slider">
+                    <img src="banner1.avif" alt="banner">
+                    <img src="banner2.avif" alt="banner">
+                    <img src="banner3.jpg" alt="banner">
+                    <img src="banner4.jpg" alt="banner">
+                    <img src="banner5.jpg" alt="banner">
+                    <img src="banner6.jpg" alt="banner">
+                </div>
+            </div>
+        </section>
+        <!-------items for all-------->
+        <section>
+            <div class="card">
+                <div class="common-heading">
+                    <div class="common-heading-left">
+                        <h1>Deals of the day <i class="fa fa-clock-o" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="common-heading-type">
+                        <button>view all</button>
+                    </div>
+                </div>
+                <div class="common-row-col-deals">
+                    <div class="common-col">
+                        <img src="c-1.avif" alt="" class="product-img">
+                        <h3 class="price">Grocery list</h3>
+                        <h4>Upto 40% off</h4>
+                        <h6 class="price">Vegies,Fruit& more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="C-2.jpg" alt="" class="product-img">
+                        <h3 class="price">Dairy</h3>
+                        <h4>Upto 20% off</h4>
+                        <h6 class="price">Cheese,Butter & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="C-3.jpg" alt="" class="product-img">
+                        <h3 class="price">Protien</h3>
+                        <h4>Upto 30% off</h4>
+                        <h6 class="price">Meat,Fish & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="c-4.jpg" alt="" class="product-img">
+                        <h3 class="price">Starchy Food</h3>
+                        <h4>Upto 50% off</h4>
+                        <h6 class="price">Bread,rice & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="c-5.jpg" alt="" class="product-img">
+                        <h3 class="price">Bio-Pesticides</h3>
+                        <h4>Top Selling</h4>
+                        <h6 class="price">Starts from <i class="fa fa-inr" aria-hidden="true"></i>50</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="c-6.jpg" alt="" class="product-img">
+                        <h3 class="price">Seed</h3>
+                        <h4>Upto 60% off</h4>
+                        <h6 class="price">Vegetable & fruit seeds</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------products------->
+        <section>
+            <div class="card">
+                <div class="common-heading">
+                    <div class="common-heading-left">
+                        <h1>Best Orangic Products<i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="common-heading-type">
+                        <button>view all</button>
+                    </div>
+                </div>
+                <div class="common-row-col-deals">
+                    <div class="common-col">
+                        <img src="p-1.jpg" alt="" class="product-img">
+                        <h3 class="price">Jams</h3>
+                        <h4>Upto 40% off</h4>
+                        <h6 class="price">tropical and exotic fruit jams</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="p-2.avif" alt="" class="product-img">
+                        <h3 class="price">Pickels</h3>
+                        <h4>Upto 20% off</h4>
+                        <h6 class="price">Pickel in oil,Pickelin brine & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="p-3.avif" alt="" class="product-img">
+                        <h3 class="price">Honey</h3>
+                        <h4>Upto 50% off</h4>
+                        <h6 class="price">organic honey</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="p-4.jpg" alt="" class="product-img">
+                        <h3 class="price">Juices</h3>
+                        <h4>Upto 50% off</h4>
+                        <h6 class="price">Organic Fruit and Vegtable juices</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="p-5.jpg" alt="" class="product-img">
+                        <h3 class="price">Sauces</h3>
+                        <h4>Top Selling</h4>
+                        <h6 class="price">Starts from <i class="fa fa-inr" aria-hidden="true"></i>50</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="p-6.jpg" alt="" class="product-img">
+                        <h3 class="price">Spices</h3>
+                        <h4>Upto 60% off</h4>
+                        <h6 class="price">Indian,Arbian & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------Beauty-------->
+        <section>
+            <div class="card">
+                <div class="common-heading">
+                    <div class="common-heading-left">
+                        <h1>Beauty Wellness<i class="fa fa-female" aria-hidden="true"></i></h1>
+                    </div>
+                    <div class="common-heading-type">
+                        <button>view all</button>
+                    </div>
+                </div>
+                <div class="common-row-col-deals">
+                    <div class="common-col">
+                        <img src="b-1.avif" alt="" class="product-img">
+                        <h3 class="price">Serum</h3>
+                        <h4>Upto 40% off</h4>
+                        <h6 class="price">Oragnic and vegan Serum</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="b-2.avif" alt="" class="product-img">
+                        <h3 class="price">Soap</h3>
+                        <h4>Upto 20% off</h4>
+                        <h6 class="price">Beauty Soap ,Washing Soap & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="b-3.avif" alt="" class="product-img">
+                        <h3 class="price">Body Oil</h3>
+                        <h4>Upto 50% off</h4>
+                        <h6 class="price">Oragnic Body oil</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="b-4.avif" alt="" class="product-img">
+                        <h3 class="price">Hair Oil</h3>
+                        <h4>Upto 50% off</h4>
+                        <h6 class="price">alomond oil,coconut oil & more</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="b-5.avif" alt="" class="product-img">
+                        <h3 class="price">shampoo and conditioner</h3>
+                        <h4>Top Selling</h4>
+                        <h6 class="price">Starts from <i class="fa fa-inr" aria-hidden="true"></i>50</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="b-6.avif" alt="" class="product-img">
+                        <h3 class="price">Face Mask</h3>
+                        <h4>Upto 60% off</h4>
+                        <h6 class="price">organic face mask</h6>
+                        <i class="fa fa-shopping-bag" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <!----price product---->
+                    <div class="common-col">
+                        <img src="bp-1.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="bp-2.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="bp-1.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="bp-1.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="bp-1.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                    <div class="common-col">
+                        <img src="bp-1.avif" alt="" class="product-img">
+                        <h3 class="product-title">Organic Soap</h3>
+                        <h4>handcrafted by local beekeepers</h4>
+                        <h6 class="price"><i class="fa fa-inr" aria-hidden="true"></i>360</h6>
+                        <i class="fa fa-shopping-bag add-cart" aria-hidden="true" id="add-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-----footer------>
+        <footer>
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <div class="footer-heading">
+                        <p>ABOUT</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Contact Us</a>
+                        <a href="#">About</a>
+                        <a href="#">Map</a>
+                        <a href="#">Stastical Data</a>
+                        <a href="#">Press</a>
+                        <a href="#">Agri Info</a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-heading">
+                        <p>HELP</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Payments</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Cancellation and Returns</a>
+                        <a href="#">Stastical Data</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Press</a>
+                        <a href="#">Report Infringement</a>
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <div class="footer-heading">
+                        <p>POLICY</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Return Policy</a>
+                        <a href="#">Term of Use</a>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">ERP compliance</a>
+                    </div>
+                </div>
+                <div class="footer-col-4">
+                    <div class="footer-heading">
+                        <p>SOCIAL</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Youtube</a>
+                    </div>
+                </div>
+                <div class="footer-col-5">
+                    <div class="footer-heading">
+                        <p>Mail Us</p>
+                    </div>
+                    <div class="footer-list">
+                       <p>Agri Market website
+                        24/7 available
+                        contact us anytime for help
+                        related to website
+                       </p>
+                    </div>
+                </div>
+                <div class="footer-col-6">
+                    <div class="footer-heading">
+                        <p>Regisitered Office Addresss</p>
+                    </div>
+                    <div class="footer-list">
+                       <p>Nowhere</p>
+                        <p>its for educational purpose</p>
+                        <p>only</p>
+                    </div>
+                </div>
+            </div>    
+            <div class="footer-row2">
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-shopping-bag" aria-hidden="true"></i>Sell on Agri Market</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-star" aria-hidden="true"></i>Advertise</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-gift" aria-hidden="true"></i>Gift Cards</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-question-circle" aria-hidden="true"></i>Help Center</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
