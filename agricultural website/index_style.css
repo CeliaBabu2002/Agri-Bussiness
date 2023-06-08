@@ -345,9 +345,9 @@ header{
     flex-direction: row;
     position: relative;
     animation-name: slider;
-    animation-duration: 15s;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
-    transition-delay: 2s;
+    transition-delay: 3s;
 }
 .slider img{
     width: fit-content;
