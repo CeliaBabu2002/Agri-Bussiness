@@ -1,25 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-} 
-h1{
+}
+
+h1 {
     color: #333;
     margin-bottom: 60px;
 }
-iframe{
-    width: 80%;
-    height: 500px;
-    filter: invert(100%);
+
+.map-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
