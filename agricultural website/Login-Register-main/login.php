@@ -12,7 +12,7 @@ if (isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
     <div class="container">
@@ -39,17 +39,40 @@ if (isset($_SESSION["user"])) {
         }
         ?>
       <form action="login.php" method="post">
-        <div class="form-group">
-            <input type="email" placeholder="Enter Email:" name="email" class="form-control">
+        <div class="box">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-1 box1">
+                        <div class="inline-text">
+                            <h1><b><i>Login</i></b></h1>
+                            <p><b>Get Access to your orders,<br>
+                                Wishlist and<br>
+                                Recommendations<br>
+                            </b></p>
+                            <pre>
+
+                            </pre>
+                            <div style="text-align: center;">
+                                <img src="logob.png" width="250" alt="My Image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-1 box2">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control">
+                            <label>Enter email/Mobile Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password"  name="password" class="form-control">
+                            <label>Enter Password</label>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" value="Login" name="login" class="btn btn-primary">
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="form-group">
-            <input type="password" placeholder="Enter Password:" name="password" class="form-control">
+       </form>
+        <div><p>Not registered yet <a href="registration.php">Register Here</a></p></div>
         </div>
-        <div class="form-btn">
-            <input type="submit" value="Login" name="login" class="btn btn-primary">
-        </div>
-      </form>
-     <div><p>Not registered yet <a href="registration.php">Register Here</a></p></div>
-    </div>
 </body>
 </html>
