@@ -12,7 +12,7 @@ if (isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="registration-style.css">
 </head>
 <body>
     <div class="container">
@@ -68,24 +68,56 @@ if (isset($_SESSION["user"])) {
         }
         ?>
         <form action="registration.php" method="post">
-            <div class="form-group">
-                <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
-            </div>
-            <div class="form-group">
-                <input type="emamil" class="form-control" name="email" placeholder="Email:">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="password" placeholder="Password:">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
-            </div>
-            <div class="form-btn">
-                <input type="submit" class="btn btn-primary" value="Register" name="submit">
+            <div class="box">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-1 box1">
+                        <div class="inline-text">
+                            <h1><b><i>Looks like you're<br>
+                            new here!</i></b></h1>
+                            <p><b>Sign up with your mobile number<br> 
+                                to get started
+                            </b></p>
+                            <pre>
+
+                            </pre>
+                            <div style="text-align: center;">
+                                <img src="logob.png" width="250" alt="My Image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-1 box2">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="fullname">
+                            <label for="">Full Name:</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="emamil" class="form-control" name="email" >
+                            <label for="">Email Address:</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" >
+                            <label>Enter Password</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="repeat_password" >
+                            <label>Repeat Password</label>
+                        </div>
+                        <pre>
+
+                        </pre>
+                        <div class="form-btn">
+                            <input type="submit" class="btn btn-primary" value="Register" name="submit">
+                        </div>
+                        <div class="form-group">
+                        <p class="footer"><a href="#">New to Agri-Bussiness? Create an account</a></p>
+                        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </form>
         <div>
-        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
       </div>
     </div>
 </body>
