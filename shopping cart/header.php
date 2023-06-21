@@ -5,8 +5,11 @@
       <a href="#" class="logo">Farmkart</a>
 
       <nav class="navbar">
-         <a href="admin.php">add products</a>
-         <a href="products.php">view products</a>
+         <!-- <a href="admin.php">add products</a> -->
+         <a href="loginA.php">Login</a>
+         <a href="registrationA.php">Signup</a>
+         <a href="productsA.php">view products</a>
+
       </nav>
 
       <?php
