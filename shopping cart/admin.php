@@ -60,6 +60,7 @@ if(isset($_POST['update_product'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="logo.png" type="image/x-icon">
    <title>admin panel</title>
 
    <!-- font awesome cdn link  -->

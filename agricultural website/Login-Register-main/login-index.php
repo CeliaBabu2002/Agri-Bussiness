@@ -16,8 +16,31 @@ if (!isset($_SESSION["user"])) {
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Dashboard</h1>
-        <a href="logout.php" class="btn btn-warning">Logout</a>
+    <form action="login.php" method="post">
+        <div class="box">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-1 box1">
+                        <div class="inline-text">
+                            <h1><b><i>Logging Off from 
+                                <br>the Farm Life</i></b></h1>
+
+                            <pre>
+
+                            </pre>
+                            <div style="text-align: center;">
+                                <img src="logob.png" width="250" alt="My Image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-1 box2">
+                        <div class="form-group">
+                        <p style="font-size: 20px; width: 200px;  white-space: nowrap; ">Are you sure you want to log out?</p>
+                        <a href="logout.php" class="btn btn-warning">Logout</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+       </form>
     </div>
 </body>
 </html>

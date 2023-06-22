@@ -12,7 +12,7 @@ if (isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="registration-styleA.css">
+    <link rel="stylesheet" href="registration-style.css">
 </head>
 <body>
     <div class="container">
@@ -39,8 +39,8 @@ if (isset($_SESSION["user"])) {
            if ($password!==$passwordRepeat) {
             array_push($errors,"Password does not match");
            }
-           require_once "databaseA.php";
-           $sql = "SELECT * FROM farmer WHERE email = '$email'";
+           require_once "database.php";
+           $sql = "SELECT * FROM users WHERE email = '$email'";
            $result = mysqli_query($conn, $sql);
            $rowCount = mysqli_num_rows($result);
            if ($rowCount>0) {
@@ -52,7 +52,7 @@ if (isset($_SESSION["user"])) {
             }
            }else{
             
-            $sql = "INSERT INTO farmer (full_name, email, password) VALUES ( ?, ?, ? )";
+            $sql = "INSERT INTO users (full_name, email, password) VALUES ( ?, ?, ? )";
             $stmt = mysqli_stmt_init($conn);
             $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
             if ($prepareStmt) {
@@ -67,7 +67,7 @@ if (isset($_SESSION["user"])) {
 
         }
         ?>
-        <form action="registrationA.php" method="post">
+        <form action="registration.php" method="post">
             <div class="box">
                 <div class="row">
                     <div class="col-sm-5 col-xs-1 box1">
@@ -110,7 +110,7 @@ if (isset($_SESSION["user"])) {
                         </div>
                         <div class="form-group">
                         <p class="footer"><a href="#">New to Agri-Bussiness? Create an account</a></p>
-                        <div><p>Already Registered <a href="loginA.php">Login Here</a></p></div>
+                        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
                         </div>
                         
                     </div>

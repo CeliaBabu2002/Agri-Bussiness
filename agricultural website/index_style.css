@@ -67,7 +67,7 @@ header{
     margin-top: 17px;
 }
 .login_btn{
-    color: lawngreen;
+    color: rgb(62, 112, 11);
     border-radius: 2px;
     border: ipx solid white;
     background: white;
@@ -298,6 +298,7 @@ header{
 .dropdown{
     background-color: rgb(221,228,234);
 }
+
 .dropdown-content{
     display: none;
     position: absolute;
@@ -390,10 +391,26 @@ header{
     margin-top: 20px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
 }
+.blue-button {
+    background-color: rgb(7, 7, 201);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.blue-button:hover {
+    background-color: darkblue;
+}
+  
 .common-heading-left{
     font-size: 20px;
     font-weight: 400;
-    padding: auto;
+    padding: 5px 20px;
 }
 .common-heading-right button{
     width: 90px;
@@ -447,8 +464,8 @@ header{
 }
 /*-----------footer--------*/
 .footer{
-    background-color: aquamarine;
-    height: 332;
+    background-color: rgb(5, 9, 94);
+    height: 332px;
 }
 .footer-row{
     width: 100%;
@@ -496,7 +513,7 @@ header{
     display: block;
     text-decoration: none;
     text-transform: capitalize;
-    color: blue;
+    color: white;
     font-size: 12px;
     font-weight: 400;
     padding: 5px 0px;
@@ -507,7 +524,7 @@ header{
 .footer-list p{
     text-align: left;
     display: block;
-    color: black;
+    color: white;
     font-size: 12px;
     font-weight: 100px;
     padding: 5px 0px;
@@ -524,7 +541,7 @@ header{
     cursor: pointer;
 }
 .footer-list-address span{
-    color: blue;
+    color: white;
     cursor: pointer;
 }
 .footer-row2-col p{
@@ -538,7 +555,7 @@ header{
     letter-spacing: .7px;
 }
 .fa-shopping-bag,.fa-star,.fa-gift,.fa-question-circle{
-    color: darkblue;
+    color: darkgoldenrod;
     cursor: pointer;
     padding-right: 10px;
     font-size: 15px;

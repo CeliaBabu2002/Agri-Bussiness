@@ -73,6 +73,6 @@ if (isset($_SESSION["user"])) {
         </div>
        </form>
         <div><p>Not registered yet <a href="registrationA.php">Register Here</a></p></div>
-        </div>
+    </div>
 </body>
 </html>
