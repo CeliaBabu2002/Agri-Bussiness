@@ -45,7 +45,7 @@ if(isset($_POST['order_btn'])){
             <p> your payment mode : <span>".$method."</span> </p>
             <p>(*pay when product arrives*)</p>
          </div>
-            <a href='products.php' class='btn'>continue shopping</a>
+            <a href='productsA.php' class='btn'>continue shopping</a>
          </div>
       </div>
       ";
